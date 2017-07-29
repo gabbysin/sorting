@@ -35,20 +35,15 @@ function bubbleSort(arr){
     }
     for (var i=unsortedArr; i>1; i--){
         for (var j=0; j<unsortedArr; j++){
-            // if (typeof(arr[j]) !== ''){
 
-            // }
             if (arr[j]>arr[j+1]){
                 arr = arr.slice(0,j).concat(swap(arr[j], arr[j+1]).concat(arr.slice(j+2)))
 
             }
         }
-        //unsortedArr -= 1
     }
     return arr
 }
-
-// COMMMENT!
 
 
 var swap = function(a, b){
